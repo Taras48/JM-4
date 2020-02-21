@@ -1,7 +1,7 @@
 package all.dbHelper;
 
 import all.model.User;
-import all.utils.PropertyReader;
+import old.factory.utils.PropertyReader;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;

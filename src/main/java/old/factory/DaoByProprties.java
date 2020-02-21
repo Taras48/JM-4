@@ -1,8 +1,8 @@
-package all.utils;
+package old.factory;
 
-import all.dao.factorys.DaoFactory;
-import all.dao.factorys.DaoHibernateFactory;
-import all.dao.factorys.DaoJDBCFactory;
+import old.factory.DaoFactory;
+import old.factory.DaoHibernateFactory;
+import old.factory.DaoJDBCFactory;
 
 import java.io.IOException;
 import java.io.InputStream;

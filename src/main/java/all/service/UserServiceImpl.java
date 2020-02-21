@@ -1,8 +1,8 @@
 package all.service;
 
-import all.utils.DaoByProprties;
+import all.dao.UserDaoFactory;
+import old.factory.DaoByProprties;
 import all.dao.UserDao;
-import all.dao.factorys.DaoFactory;
 import all.model.User;
 
 import java.util.List;
@@ -11,10 +11,11 @@ public class UserServiceImpl implements UserService {
 
     private static UserServiceImpl userService;
     private UserDao connect;
-    DaoFactory daoFactory = DaoByProprties.getConnectionByProperties();
+  //  DaoFactory daoFactory = DaoByProprties.getConnectionByProperties();
 
     private UserServiceImpl() {
-        connect = daoFactory.createUserDao();
+      //  connect = daoFactory.createUserDao();
+        connect = UserDaoFactory.getConnectionByProperties();
     }
 
     public static UserServiceImpl getInstance() {

@@ -1,4 +1,4 @@
-package all.dao.factorys;
+package old.factory;
 
 import all.dao.UserDao;
 import all.dao.UserDaoHibernateImpl;
